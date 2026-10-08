@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>NimWindow</class>
+    <widget class="QWidget" name="NimWindow">
+        <property name="geometry"><rect><x>0</x><y>0</y><width>420</width><height>300</height></rect></property>
+        <property name="windowTitle"><string>Псевдоним</string></property>
+        <layout class="QVBoxLayout">
+            <item>
+                <layout class="QHBoxLayout">
+                    <item><widget class="QLabel"><property name="text"><string>Камней в куче:</string></property></widget></item>
+                    <item><widget class="QSpinBox" name="spinStones">
+                            <property name="minimum"><number>1</number></property>
+                            <property name="maximum"><number>1000</number></property>
+                            <property name="value"><number>15</number></property>
+                            </widget></item>
+                    <item><widget class="QPushButton" name="btnNewGame"><property name="text"><string>Новая игра</string></property></widget></item>
+                </layout>
+            </item>
+            <item>
+                <widget class="QLabel" name="lblStones">
+                    <property name="text"><string>Осталось камней: —</string></property>
+                    <property name="alignment"><set>Qt::AlignCenter</set></property>
+                    <property name="font"><font><pointsize>14</pointsize><bold>true</bold></font></property>
+                </widget>
+            </item>
+            <item>
+                <layout class="QHBoxLayout">
+                    <item><widget class="QLabel"><property name="text"><string>Ваш ход (1–3):</string></property></widget></item>
+                    <item><widget class="QSpinBox" name="spinTake">
+                            <property name="minimum"><number>1</number></property>
+                            <property name="maximum"><number>3</number></property>
+                            </widget></item>
+                    <item><widget class="QPushButton" name="btnTake"><property name="text"><string>Взять</string></property></widget></item>
+                </layout>
+            </item>
+            <item>
+                <widget class="QTextEdit" name="log" >
+                    <property name="readOnly"><bool>true</bool></property>
+                </widget>
+            </item>
+        </layout>
+    </widget>
+    <resources/>
+    <connections/>
+</ui>

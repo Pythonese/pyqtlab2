@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>PhoneBookWindow</class>
+    <widget class="QWidget" name="PhoneBookWindow">
+        <property name="geometry"><rect><x>0</x><y>0</y><width>400</width><height>340</height></rect></property>
+        <property name="windowTitle"><string>Записная книжка</string></property>
+        <layout class="QVBoxLayout">
+            <item>
+                <layout class="QHBoxLayout">
+                    <item><widget class="QLabel"><property name="text"><string>Имя:</string></property></widget></item>
+                    <item><widget class="QLineEdit" name="editName"/></item>
+                </layout>
+            </item>
+            <item>
+                <layout class="QHBoxLayout">
+                    <item><widget class="QLabel"><property name="text"><string>Номер:</string></property></widget></item>
+                    <item><widget class="QLineEdit" name="editPhone"/></item>
+                </layout>
+            </item>
+            <item>
+                <widget class="QPushButton" name="btnAdd">
+                    <property name="text"><string>Добавить контакт</string></property>
+                </widget>
+            </item>
+            <item>
+                <widget class="QListWidget" name="listWidget"/>
+            </item>
+        </layout>
+    </widget>
+    <resources/>
+    <connections/>
+</ui>

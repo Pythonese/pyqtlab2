@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>FlagWindow</class>
+    <widget class="QWidget" name="FlagWindow">
+        <property name="geometry">
+            <rect><x>0</x><y>0</y><width>420</width><height>360</height></rect>
+        </property>
+        <property name="windowTitle">
+            <string>Текстовый флаг</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+                <widget class="QGroupBox" name="groupTop">
+                    <property name="title"><string>Верхняя полоса</string></property>
+                    <layout class="QHBoxLayout">
+                        <item><widget class="QRadioButton" name="topRed"><property name="text"><string>Красный</string></property><property name="checked"><bool>true</bool></property></widget></item>
+                        <item><widget class="QRadioButton" name="topGreen"><property name="text"><string>Зелёный</string></property></widget></item>
+                        <item><widget class="QRadioButton" name="topBlue"><property name="text"><string>Синий</string></property></widget></item>
+                        <item><widget class="QRadioButton" name="topWhite"><property name="text"><string>Белый</string></property></widget></item>
+                    </layout>
+                </widget>
+            </item>
+            <item>
+                <widget class="QGroupBox" name="groupMid">
+                    <property name="title"><string>Средняя полоса</string></property>
+                    <layout class="QHBoxLayout">
+                        <item><widget class="QRadioButton" name="midRed"><property name="text"><string>Красный</string></property></widget></item>
+                        <item><widget class="QRadioButton" name="midGreen"><property name="text"><string>Зелёный</string></property><property name="checked"><bool>true</bool></property></widget></item>
+                        <item><widget class="QRadioButton" name="midBlue"><property name="text"><string>Синий</string></property></widget></item>
+                        <item><widget class="QRadioButton" name="midWhite"><property name="text"><string>Белый</string></property></widget></item>
+                    </layout>
+                </widget>
+            </item>
+            <item>
+                <widget class="QGroupBox" name="groupBot">
+                    <property name="title"><string>Нижняя полоса</string></property>
+                    <layout class="QHBoxLayout">
+                        <item><widget class="QRadioButton" name="botRed"><property name="text"><string>Красный</string></property></widget></item>
+                        <item><widget class="QRadioButton" name="botGreen"><property name="text"><string>Зелёный</string></property></widget></item>
+                        <item><widget class="QRadioButton" name="botBlue"><property name="text"><string>Синий</string></property></widget></item>
+                        <item><widget class="QRadioButton" name="botWhite"><property name="text"><string>Белый</string></property><property name="checked"><bool>true</bool></property></widget></item>
+                    </layout>
+                </widget>
+            </item>
+            <item>
+                <widget class="QPushButton" name="btnDraw">
+                    <property name="text"><string>Нарисовать</string></property>
+                </widget>
+            </item>
+            <item>
+                <widget class="QLabel" name="lblResult">
+                    <property name="text"><string>—</string></property>
+                    <property name="alignment"><set>Qt::AlignCenter</set></property>
+                </widget>
+            </item>
+        </layout>
+    </widget>
+    <resources/>
+    <connections/>
+</ui>

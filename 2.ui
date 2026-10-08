@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DiaryWindow</class>
+ <widget class="QWidget" name="DiaryWindow">
+  <property name="geometry"><rect><x>0</x><y>0</y><width>520</width><height>420</height></rect></property>
+  <property name="windowTitle"><string>Ежедневник</string></property>
+  <layout class="QVBoxLayout">
+   <item>
+    <layout class="QHBoxLayout">
+     <item><widget class="QLabel"><property name="text"><string>Событие:</string></property></widget></item>
+     <item><widget class="QLineEdit" name="editEvent"/></item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout">
+     <item><widget class="QLabel"><property name="text"><string>Дата:</string></property></widget></item>
+     <item><widget class="QCalendarWidget" name="calendar"/></item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout">
+     <item><widget class="QLabel"><property name="text"><string>Время:</string></property></widget></item>
+     <item><widget class="QTimeEdit" name="timeEdit">
+       <property name="displayFormat"><string>HH:mm</string></property>
+     </widget></item>
+     <item><widget class="QPushButton" name="btnAdd"><property name="text"><string>Добавить</string></property></widget></item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QListWidget" name="listWidget"/>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
